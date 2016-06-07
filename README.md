@@ -2,4 +2,5 @@
 
 Work in progres : do not use
 
+push in hub.docker.com
 
