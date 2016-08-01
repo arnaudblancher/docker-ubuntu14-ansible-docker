@@ -11,6 +11,7 @@ RUN apt-get update -q \
  &&  echo 'deb https://apt.dockerproject.org/repo ubuntu-trusty main' > /etc/apt/sources.list.d/docker.list \
  &&  apt-get update -q \
  &&  apt-get purge - lxc-docker \
- &&  apt-get install -y apparmor docker-engine
-
+ # &&  apt-get install -y apparmor docker-engine
+ &&  apt-get install -y apparmor docker-engine=1.11.2-0~trusty
+ 
 CMD ["/bin/bash"]
