@@ -11,7 +11,10 @@ RUN apt-get update -q \
  &&  echo 'deb https://apt.dockerproject.org/repo ubuntu-trusty main' > /etc/apt/sources.list.d/docker.list \
  &&  apt-get update -q \
  &&  apt-get purge - lxc-docker \
+ # locales
+ && locale-gen fr_FR.UTF-8 && locale-gen en_US.UTF-8 \
+ && update-locale && dpkg-reconfigure locales \
  # &&  apt-get install -y apparmor docker-engine
  &&  apt-get install -y apparmor docker-engine=1.11.2-0~trusty
- ## 
+
 CMD ["/bin/bash"]
