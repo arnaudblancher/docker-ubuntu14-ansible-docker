@@ -13,5 +13,5 @@ RUN apt-get update -q \
  &&  apt-get purge - lxc-docker \
  # &&  apt-get install -y apparmor docker-engine
  &&  apt-get install -y apparmor docker-engine=1.11.2-0~trusty
- 
+ # 
 CMD ["/bin/bash"]
