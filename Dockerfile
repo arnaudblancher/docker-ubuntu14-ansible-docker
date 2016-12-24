@@ -1,9 +1,9 @@
 FROM ubuntu:14.04
 MAINTAINER Arnaud Blancher
 RUN apt-get update -q \
- # ansible 2.1.1.0
+ # ansible 2.2.0.0
  && apt-get install -y python-jinja2-doc  sshpass  libyaml-0-2 python-crypto python-ecdsa python-httplib2 python-paramiko python-selinux python-yaml python-pip python-apt \
- && pip install ansible==2.1.1.0 docker-py==1.9.0 \
+ && pip install ansible==2.2.2.0 docker-py==1.9.0 \
  && pip install ansible-lint \
  # docker 1.12.4
  &&  apt-get install -y apt-transport-https ca-certificates \
