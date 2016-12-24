@@ -15,6 +15,7 @@ RUN apt-get update -q \
  && locale-gen fr_FR.UTF-8 && locale-gen en_US.UTF-8 \
  && update-locale && dpkg-reconfigure locales \
  # &&  apt-get install -y apparmor docker-engine
+ # tester la docker-engine=1.12.3-0~trusty
  &&  apt-get install -y apparmor docker-engine=1.11.2-0~trusty
 
 CMD ["/bin/bash"]
