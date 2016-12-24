@@ -11,6 +11,6 @@ You can find this dockerfile and the corresponding docker image on hub.docker.co
 
 ### Usage
 ```bash
-docker pull arnaudblancher/docker-ubuntu14-ansible-docker
-docker run --name gitlab  -it  arnaudblancher/docker-ubuntu14-ansible-docker:latest /bin/bash
+docker pull arnaudblancher/docker-ubuntu14-ansible-docker:ansible_2.1-docker_1.12
+docker run --name gitlab  -it  arnaudblancher/docker-ubuntu14-ansible-docker:ansible_2.1-docker_1.12 /bin/bash
 ```
